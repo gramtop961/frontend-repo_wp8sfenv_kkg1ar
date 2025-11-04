@@ -6,23 +6,23 @@ import { Heart } from 'lucide-react';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0b0512] text-white font-sans">
+    <div className="min-h-screen bg-[#120a06] text-white font-sans">
       {/* Header */}
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#0b0512]/70 backdrop-blur-md">
+      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#120a06]/70 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3">
           <a href="#" className="flex items-center gap-2">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-fuchsia-600 to-rose-600 shadow-lg shadow-pink-600/30">
+            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-gradient-to-r from-amber-600 to-orange-700 shadow-lg shadow-amber-700/30">
               <Heart className="h-4 w-4" />
             </span>
-            <span className="text-sm font-semibold tracking-wide text-pink-100">CouplesBook.in</span>
+            <span className="text-sm font-semibold tracking-wide text-amber-100">CouplesBook.in</span>
           </a>
-          <nav className="hidden gap-6 text-sm text-purple-100/80 md:flex">
+          <nav className="hidden gap-6 text-sm text-amber-100/80 md:flex">
             <a href="#features" className="hover:text-white">Features</a>
             <a href="#stories" className="hover:text-white">Stories</a>
             <a href="#about" className="hover:text-white">About</a>
             <a href="#contact" className="hover:text-white">Contact</a>
           </nav>
-          <a href="#about" className="rounded-full bg-white/5 px-4 py-2 text-sm text-pink-100 hover:bg-white/10">Join with your partner</a>
+          <a href="#about" className="rounded-full bg-white/5 px-4 py-2 text-sm text-amber-100 hover:bg-white/10">Join with your partner</a>
         </div>
       </header>
 
@@ -37,7 +37,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="border-t border-white/10 bg-[#0b0512] py-10 text-purple-100/70">
+      <footer className="border-t border-white/10 bg-[#120a06] py-10 text-amber-100/80">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 sm:flex-row">
           <p className="text-sm">© {new Date().getFullYear()} CouplesBook.in — Made with love.</p>
           <div className="flex items-center gap-4 text-sm">

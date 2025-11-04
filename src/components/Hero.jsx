@@ -5,11 +5,11 @@ export default function Hero() {
   const hearts = Array.from({ length: 8 });
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#2a0f3f] via-[#1b0b2a] to-[#0f0618] text-white">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#2b1408] via-[#1a0f09] to-[#120a06] text-white">
       <div className="absolute inset-0 pointer-events-none">
         {/* Soft radial glow */}
-        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-pink-500/20 blur-3xl" />
-        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-fuchsia-500/20 blur-3xl" />
+        <div className="absolute -top-24 -left-24 h-72 w-72 rounded-full bg-amber-500/20 blur-3xl" />
+        <div className="absolute bottom-0 right-0 h-96 w-96 rounded-full bg-orange-600/20 blur-3xl" />
       </div>
 
       {/* Floating hearts */}
@@ -26,7 +26,7 @@ export default function Hero() {
               delay: i * 0.4,
               ease: 'easeInOut',
             }}
-            className="absolute text-pink-300/50"
+            className="absolute text-amber-300/60"
             style={{
               left: `${(i * 12 + 10) % 100}%`,
               top: `${(i * 9 + 20) % 100}%`,
@@ -43,9 +43,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7 }}
-            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-pink-100 backdrop-blur-sm"
+            className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-amber-100 backdrop-blur-sm"
           >
-            <Sparkles className="h-4 w-4 text-pink-300" />
+            <Sparkles className="h-4 w-4 text-amber-300" />
             CouplesBook.in
           </motion.div>
 
@@ -62,7 +62,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="mx-auto mt-5 max-w-2xl text-lg text-purple-100/80"
+            className="mx-auto mt-5 max-w-2xl text-lg text-amber-100/85"
           >
             A warm, modern space for two—sync your calendars, capture memories, and grow with thoughtful prompts.
           </motion.p>
@@ -77,12 +77,12 @@ export default function Hero() {
               href="#about"
               className="group relative inline-flex items-center justify-center rounded-full px-6 py-3 font-medium text-white"
             >
-              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-fuchsia-500 via-pink-500 to-rose-500 blur-md opacity-60 group-hover:opacity-90 transition-opacity" />
-              <span className="relative z-10 rounded-full bg-gradient-to-r from-fuchsia-600 via-pink-600 to-rose-600 px-6 py-3 shadow-lg shadow-pink-600/30">Start Your Journey</span>
+              <span className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-500 via-orange-600 to-amber-700 blur-md opacity-60 group-hover:opacity-90 transition-opacity" />
+              <span className="relative z-10 rounded-full bg-gradient-to-r from-amber-600 via-orange-700 to-amber-800 px-6 py-3 shadow-lg shadow-amber-800/30">Start Your Journey</span>
             </a>
             <a
               href="#features"
-              className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-purple-100 backdrop-blur-sm hover:bg-white/10"
+              className="rounded-full border border-white/15 bg-white/5 px-6 py-3 text-amber-100 backdrop-blur-sm hover:bg-white/10"
             >
               Explore Features
             </a>
